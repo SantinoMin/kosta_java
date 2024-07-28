@@ -1,0 +1,11 @@
+#version: '3.1'
+#
+#services:
+#  db:
+#    image: mariadb:10.4 # ?? ???? ??
+#    container_name: team2_project
+#    environment:
+#      MYSQL_ROOT_PASSWORD: 1234
+#      MYSQL_DATABASE: team2_project
+#    ports:
+#      - "3309:3306"
