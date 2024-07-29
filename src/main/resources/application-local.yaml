@@ -15,9 +15,9 @@ server:
 
 spring:
   datasource:
-    url: "jdbc:mariadb://127.0.0.1:3309/team2_project"
+    url: "jdbc:mariadb://127.0.0.1:3309/kosta24"
     username: "root"
-    password: "1234"
+    password: "tkdals1234"
     driver-class-name: org.mariadb.jdbc.Driver
 
   jpa:
