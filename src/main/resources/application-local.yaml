@@ -10,21 +10,22 @@
 #    ports:
 #      - "3309:3306"
 
-server:
-  port: 8080
-
-spring:
-  datasource:
-    url: "jdbc:mariadb://127.0.0.1:3309/kosta24"
-    username: "root"
-    password: "tkdals1234"
-    driver-class-name: org.mariadb.jdbc.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MariaDBDialect
+#--- 아래 부분 사용하면 됨
+#server:
+#  port: 8080
+#
+#spring:
+#  datasource:
+#    url: "jdbc:mariadb://127.0.0.1:3309/kosta24"
+#    username: "root"
+#    password: "tkdals1234"
+#    driver-class-name: org.mariadb.jdbc.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MariaDBDialect
 
