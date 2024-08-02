@@ -15,13 +15,12 @@ public class ArrayListTest1 {
 		Collections.sort(al);
 		System.out.println(al);
 		
-		ArrayList al2 = new ArrayList();
-		al2.add(10);
-		al2.add(20);
-		al2.add(50);
+//		ArrayList al2 = new ArrayList();
+//		al2.add(10);
+//		al2.add(20);
+//		al2.add(50);
 		
 		System.out.println(al.containsAll(al2));
-		
 		List al3 = al.subList(1, 3);
 		System.out.println(al3);
 		al3.set(0, 200);
