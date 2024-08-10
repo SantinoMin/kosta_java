@@ -38,13 +38,13 @@ public class Main {
     // array[n]과 array[n+1]의 문자열 길이를 비교해서 array[n]의 문자열 길이가 짧다면, 그대로 진행
     // but array[n+1]의 문자열 길이가 짧다면, array[n] = array[n+1]로 진행 +
 
-    for(int i=0; i < array.size(); i++) {
-
-      if (array.size() > 1) {
-          if(array.get(i).length() > array.get(i+1).length()){
-            array.set(i, array.get(i+1));
-          } if(array.get(i) == array.get(i+1)){
-            array.remove(array.get(i+1));
+//    for(int i=0; i < array.size(); i++) {
+//
+//      if (array.size() > 1) {
+//          if(array.get(i).length() > array.get(i+1).length()){
+//            array.set(i, array.get(i+1));
+//          } if(array.get(i) == array.get(i+1)){
+//            array.remove(array.get(i+1));
         }
 
       }
