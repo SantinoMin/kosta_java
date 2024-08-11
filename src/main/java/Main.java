@@ -27,24 +27,24 @@ public class Main {
     ArrayList<String> array = new ArrayList<>();
     sc.nextLine();
 
-//    for (int i = 0; i < count - 1; i++) {
-//      array.add(sc.nextLine());
-//    }
-//    array.remove(array.get(0));
-//
-//    System.out.println(array);
+    for (int i = 0; i < count - 1; i++) {
+      array.add(sc.nextLine());
+    }
+    array.remove(array.get(0));
 
-    // array[n]과 array[n+1]을 비교해서, 1) 만약 값이 같다면, n+1번째 값을 삭제.
-    // array[n]과 array[n+1]의 문자열 길이를 비교해서 array[n]의 문자열 길이가 짧다면, 그대로 진행
-    // but array[n+1]의 문자열 길이가 짧다면, array[n] = array[n+1]로 진행 +
+    System.out.println(array);
 
-//    for(int i=0; i < array.size(); i++) {
-//
-//      if (array.size() > 1) {
-//          if(array.get(i).length() > array.get(i+1).length()){
-//            array.set(i, array.get(i+1));
-//          } if(array.get(i) == array.get(i+1)){
-//            array.remove(array.get(i+1));
+//     array[n]과 array[n+1]을 비교해서, 1) 만약 값이 같다면, n+1번째 값을 삭제.
+//     array[n]과 array[n+1]의 문자열 길이를 비교해서 array[n]의 문자열 길이가 짧다면, 그대로 진행
+//     but array[n+1]의 문자열 길이가 짧다면, array[n] = array[n+1]로 진행 +
+
+    for(int i=0; i < array.size(); i++) {
+
+      if (array.size() > 1) {
+          if(array.get(i).length() > array.get(i+1).length()){
+            array.set(i, array.get(i+1));
+          } if(array.get(i) == array.get(i+1)){
+            array.remove(array.get(i+1));
         }
 
       }
