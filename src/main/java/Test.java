@@ -1,39 +1,46 @@
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Scanner;
 
 public class Test {
 
-  public static void main(String[] args) {
+  public static void main(String[] args) throws Exception {
 
 //    문제
-//    N개의 정수가 주어진다. 이때, 최솟값과 최댓값을 구하는 프로그램을 작성하시오.
+//    N개의 숫자가 공백 없이 쓰여있다. 이 숫자를 모두 합해서 출력하는 프로그램을 작성하시오.
 //
 //    입력
-//    첫째 줄에 정수의 개수 N (1 ≤ N ≤ 1,000,000)이 주어진다. 둘째 줄에는 N개의 정수를 공백으로 구분해서 주어진다. 모든 정수는 -1,000,000보다 크거나 같고, 1,000,000보다 작거나 같은 정수이다.
-//
-//    출력
-//    첫째 줄에 주어진 정수 N개의 최솟값과 최댓값을 공백으로 구분해 출력한다.
+//    첫째 줄에 숫자의 개수 N (1 ≤ N ≤ 100)이 주어진다. 둘째 줄에 숫자 N개가 공백없이 주어진다.
 
-    // 1) 첫째 줄에 정수의 개수 N개가 있으니, 배열에 값을 넣을 때 N번 전까지 넣으면 될듯
-    // 2) 두번째 줄에 값들이 공백을 가지고 있으니, 공백을 기준으로 값들을 배열에 넣어보기
-    // 3) 배열안에서 순서는 중요하지 않으니 hashset사용하면 될 거 같고,
-    // 4) 배열 내부에서 값들을 비교해서, 최소값과 최대값 구하기
+    // 1) 첫번째 줄에는 N개의 숫자의 개수인 N이 있음 -> 읽기만 하고 넘어가기
+    BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+    String N = br.readLine();
 
-    Scanner sc = new Scanner(System.in);
-    int n = sc.nextInt();
-    if (n >= 1 && n <= 1000000){
-      sc.nextLine();
+    // 2) 두번째 줄에 입력되는 전체 정수값들을 나눠야 되는데 -> 어떻게 나눌지?
+    // br.readLine()의 값들을 ""공백없이 저장하는 리스트를 만들어서, 거기다가 하나씩 넣어보자
+    ArrayList<Integer> arr = new ArrayList<>();
+    String[] numbers = br.readLine().split(""); // 한 줄에 입력된 값들을 공백이 없는 ""로 나누고, 값 저장하기
+
+    // for문으로 numbers[n]번까지 저장하기.
+    for (int i = 0; i < numbers.length; i++) {
+      arr.add(numbers[i]);
+    }
+    System.out.println("arr = " + arr.toString());
+
+    // 3) 나눈 값들을 각각 더해야 함
+//    arr[0] + arr[1] + arr[2]...arr[n];
+    //for문 안에서 값들을 저장하는 방향으로 진행
+
+
+
+    for (int i = 0; i < N.length(); i++) {
+      String sum = "";
+      sum = sum + arr.get(i);
+      System.out.println(sum);
     }
 
-    ArrayList<Integer> list = new ArrayList<>();
-    String[] input = sc.nextLine().split(" ");
 
-    for(int i = 0; i < input.length; i++){
-    list.add(Integer.parseInt(input[i]));
 
   }
-    Collections.sort(list);
-    System.out.println(list.get(0) + " " + list.get(list.size() - 1));
-  }
+
 }
