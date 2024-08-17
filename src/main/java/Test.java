@@ -21,18 +21,6 @@ public class Test {
     ArrayList<Integer> arr = new ArrayList<>();
     String[] numbers = br.readLine().split(""); // 한 줄에 입력된 값들을 공백이 없는 ""로 나누고, 값 저장하기
 
-    int sum = 0;
-
-    // for문으로 numbers[n]번까지 저장하기.
-    // 3) 나눈 값들을 각각 더해야 함
-//    arr[0] + arr[1] + arr[2]...arr[n];
-    //for문 안에서 값들을 저장하는 방향으로 진행
-    for (int i = 0; i < numbers.length; i++) {
-      arr.add(Integer.parseInt(numbers[i]));
-
-      sum = sum + arr.get(i);
-    }
-    System.out.println(sum);
 
   }
 
