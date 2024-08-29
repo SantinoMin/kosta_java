@@ -20,22 +20,24 @@ public class Main {
 //    첫째 줄부터 아홉 번째 줄까지 한 줄에 하나의 자연수가 주어진다. 주어지는 자연수는 100 보다 작다.
 
 
-
     // 1) 최대값이 얼마인지 2) 해당 값은 몇번째에 있는지
 
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
-    // 입력되는 값들을 List에 넣기 // 아홉번째 줄까지 값이 들어옴
-    List<Integer> numbers = new ArrayList<>();
+    int max = 0;
+    int max_num = 0;
 
+    // 배열에 넣을 필요없이, 저장되는 값들을 비교해서 더 크면 max값으로 두고,
+    // 더 작으면 다시 for문 진행
     for(int i = 0; i < 9; i++){
-      numbers.add(Integer.parseInt(br.readLine()));
+    String num = br.readLine();
+      if( Integer.parseInt(num) > max){
+        max = Integer.parseInt(num);
+        max_num = i+1;
+      }
     }
-    System.out.println(numbers);
-
-    // 값들 비교해서
-
-
+    br.close();
+    System.out.print(max + "\n" + max_num);
   }
 }
 
