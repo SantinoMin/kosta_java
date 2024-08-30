@@ -1,5 +1,7 @@
 //package SocialLoginEx.domain.service;
 //
+//import BankMybatis.domain.dao.MemberDao;
+//import BankMybatis.domain.dto.Member;
 //import java.io.BufferedReader;
 //import java.io.BufferedWriter;
 //import java.io.InputStreamReader;
@@ -9,10 +11,23 @@
 //
 //public class LoginServiceImpl implements LoginService {
 //
+//  private MemberDao memberDao;
+//
 //
 //  @Override
-//  public void kakaoLogin(String code) {
+//  public Member kakaoLogin(String code) throws Exception {
+//    String token = getKakaoToken(code);
+//    Member member = getKakaoUserInfo(token);
+//    Member smember = memberDao.selectMember(member.getId());
+//    if(smember==null){
+//      memberDao.insertMember(member);
+//    }
+//    return smember;
+//  }
 //
+//
+//
+//  private Member getKakaoUserInfo(String token) {
 //  }
 //
 //  String getKakaoToken(String code) throws Exception {

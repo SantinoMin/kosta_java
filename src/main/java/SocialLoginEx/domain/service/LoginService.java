@@ -1,6 +1,9 @@
 package SocialLoginEx.domain.service;
 
+import BankMybatis.domain.dto.Member;
+
 public interface LoginService {
-  void kakaoLogin(String code) throws Exception;
+
+  Member kakaoLogin(String code) throws Exception;
 
 }

@@ -6,13 +6,13 @@
     <meta charset="UTF-8">
     <title>Insert title here</title>
     <!-- <link rel="stylesheet" href="./css/reset.css">-->
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="../css/header.css">
 </head>
 <body>
 <header>
 <%--    //여기 campaign.jsp가 들어가는게 맞는건지?--%>
     <a href="registerCampaign_7.0.1.jsp">
-        <img src="./logo/logo.svg" alt="logo 이미지" />
+        <img src="../logo/logo.svg" alt="logo 이미지" />
     </a>
     <ul class="menu_wrap">
         <li>

@@ -6,6 +6,10 @@ body {
 
 }
 
+#sidebar {
+ padding-top: 30px;
+}
+
 
 #container {
   display: flex;
@@ -506,4 +510,11 @@ body {
 }
 #showlist tr:nth-child(even) td {
   background: #eaeaed;
+}
+
+#main {
+  width: 700px;
+  flex-basis:75%;
+  padding-left:40px;
+  padding-bottom: 100px;
 }

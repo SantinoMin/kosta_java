@@ -104,10 +104,6 @@ h2 {
   cursor: pointer;           /* 이미지에 커서를 올리면 클릭 가능한 것처럼 표시 */
 }
 
-
-
-
-
 #adChannel {
   font-size: 20px;
   display: flex;

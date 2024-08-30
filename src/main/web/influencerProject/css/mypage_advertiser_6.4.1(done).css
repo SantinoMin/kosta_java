@@ -1,6 +1,7 @@
 body {
   display: flex;
-  flex-direction: column;
+  /*flex-direction: column;*/
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 
@@ -13,45 +14,14 @@ body {
   padding:0;
   width:1200px;
 }
-#sidebar {
-  flex-basis:25%;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-}
 
-.sideitem1 {
+.mid {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-
-  background-color: white;
-  width:100%;
-  text-align:left;
-  border-radius:20px;
-
+  flex-direction: row;
+  margin-top: 50px;
+  margin-right: 50px;
+  width: 900px;
 }
-
-.sideitem2 {
-  background-color: white;
-  width:100%;
-  text-align:left;
-  border-radius:20px;
-  margin:10px auto;
-}
-
-
-.sideitem3 {
-  background-color: white;
-  width:100%;
-  text-align:left;
-  border-radius:20px;
-  /*margin:10px auto;*/
-  padding: 10px 10px;
-}
-
-
 
 
 #profileimg {
@@ -70,27 +40,7 @@ body {
   padding:4px 12px;
   margin:10px 10px;
 }
-.sideitem ul {
-  list-style:none;
-  margin:1em 0;
-  padding-left: 20px;
-}
-.sideitem ul li {
-  margin:10px 0;
-}
-.sideitem a {
-  font-weight:bold;
-  text-decoration:none;
-  color:black;
-}
 
-.sideitem1 h2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  text-align: left;
-
-}
 
 .icons {
   align-items:center;
@@ -108,7 +58,12 @@ body {
   margin-right:5px;
 }
 
+#sidebar {
+  margin-top: 30px;
+}
+
 #main {
+  width: 700px;
   flex-basis:75%;
   padding-left:40px;
   padding-bottom: 100px;
@@ -119,11 +74,15 @@ body {
 }
 
 #mainwrap {
+  display: flex;
+  flex-direction: column;
   text-align:left;
   border-radius:20px;
   background-color:white;
   padding:10px 20px;
   height: 500px;
+
+  width: 120%;
 
 }
 #filter {
@@ -138,13 +97,19 @@ body {
   margin-right:10px;
   padding:4px 6px;
 }
+
 #campaignwrap {
   display:flex;
-  flex-flow:wrap;
+  flex-direction: column;
+  /*flex-flow:wrap;*/
   justify-content:space-between;
   border:1px solid #e5e5e5;
   border-radius:10px;
+
+  overflow-x: auto; /* 수평 스크롤 활성화 */
+  scroll-snap-type: x mandatory; /* 스크롤 스냅 설정 */
 }
+
 .campaign {
   display:flex;
   flex-direction:column;
@@ -152,6 +117,31 @@ body {
   padding:10px;
   align-items:flex-start;
   text-align: left;
+}
+
+.campaign-row {
+  display:flex;
+  flex-direction: row;
+}
+
+.campaign-row1 {
+  display:flex;
+  flex-direction: row;
+}
+
+
+#campaignNum1 {
+  margin-top: 10px;
+}
+
+.campaign_name {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  margin-bottom: 20px;
+  gap: 5px;
 }
 
 .campaign >.category {

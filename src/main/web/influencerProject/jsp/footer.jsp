@@ -6,15 +6,15 @@
     <meta charset="UTF-8">
     <title>Insert title here</title>
 <%--    <link rel="stylesheet" href="./css/reset.css">--%>
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="../css/footer.css">
 <%--    <link rel="stylesheet" href="./css/footer.css">--%>
-    <link rel="stylesheet" href="${pageContext.request.contextPath}footer.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath} ../css/footer.css">
 </head>
 <body>
 <div class="footer">
     <div class="footer_container">
         <div class="footer_left">
-            <img src="logo/logo_footer.svg" alt="footer로고이미지" />
+            <img src="../logo/logo_footer.svg" alt="footer로고이미지" />
             <div class="notice">
                 <p>이용약관</p>
                 <p>개인정보처리방침</p>
