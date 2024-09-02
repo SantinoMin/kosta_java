@@ -1,24 +1,24 @@
-
-
+#
+#
+##server:
+##  port: 8080
+#
+#
+##//서블릿은 9090 포트에서 실행됨
 #server:
-#  port: 8080
-
-
-#//서블릿은 9090 포트에서 실행됨
-server:
-  port: 9090
-
-spring:
-  datasource:
-    url: "jdbc:mariadb://127.0.0.1:3309/kosta24"
-    username: "root"
-    password: "1234"
-    driver-class-name: org.mariadb.jdbc.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MariaDBDialect
+#  port: 9090
+#
+#spring:
+#  datasource:
+#    url: "jdbc:mariadb://127.0.0.1:3309/kosta24"
+#    username: "root"
+#    password: "1234"
+#    driver-class-name: org.mariadb.jdbc.Driver
+#
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
+#    properties:
+#      hibernate:
+#        dialect: org.hibernate.dialect.MariaDBDialect
